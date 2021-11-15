@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app-styles.css">
+    <script type="text/javascript" src="app-notas.js"></script>
+    <title>notas</title>
+</head>
+
+<body>
+    
+    <div class="overlay">
+
+        <form>
+          
+            <div class="con">
+           
+                <header class="head-form">
+                    <h2>API NOTAS</h2>
+                    
+                </header>
+           
+                <div class="atributos">
+
+                    <div class="hijo1">
+                        <h3>Crear Nota:</h3>
+                        <hr>
+                        <label for="idNotas">Id Notas:</label>     
+                        <input id="idNotas" required></br>
+
+                        <label for="id">Id Alumno:</label>     
+                        <input id="idAlumno" required></br>
+
+                        <label for="idAsignaturas">Id Asignaturas:</label>     
+                        <input id="idAsignaturas" required></br>
+
+                        <label for="fechaExamen">Fecha Examen:</label> 
+                        <input id="fechaExamen" required></br>
+                        
+                        <label for="calificacion">Calificación:</label>     
+                        <input id="calificacion" required></br>
+                        <br>
+                        
+                        <!--        botones -->
+            
+                        <div class="other">
+                        
+                            <button type="button" class="btn submits" onclick="postNota()">CREAR</button>
+
+                            <button type="button" class="btn submits" onclick="putNota()">ACTUALIZAR</button>
+
+                        </div>
+                    </div>
+
+                    <div class="hijo2">
+                    
+                        <h4>CALIFICACIONES</h3>
+                        <hr>
+                        <table class="tabla">
+                            
+                            <label for="idNota">Id Nota:</label>     
+                            <input id="idNota" required></br>
+
+                            <label for="idalumno">Id Alumno:</label>     
+                            <input id="idalumno" required></br>
+                        
+                           <br>
+                          <!--        botones -->
+            
+                        <div class="other">
+                            
+                            <button type="button" class="btn submits" onclick="getNota()"> MOSTRAR</button>
+                        
+                            <button type="button" class="btn submits" onclick="deleteNota()">ELIMINAR</button>
+                        </div>
+
+                            
+                            <div >
+                                <label for="alumnos">DATOS</label>
+                                <textarea id="alumnos"></textarea>
+                            </div>
+                    </table>
+                    </div>
+                   
+                </div>
+
+
+                <!--   fin Container  -->
+            </div>
+            
+            <!-- fin Form -->
+        </form>
+    </div>
+   
+    <footer id="footer"><p id="foot">BASE DE DATOS CODENOTCH- <a href="" id="foot1">STEFANIA BURI</a>- 2021</p></footer>
+</body>
+</html>

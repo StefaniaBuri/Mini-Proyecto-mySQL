@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+
+form {
+    width: 550px;
+    min-height: 300px;
+    height: auto;
+    border-radius: 5px;
+    margin: 2% auto;
+    box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+    padding: 5%;
+    background-image: linear-gradient(-225deg, #fce2ba 50%, #f9cdfc 50%);
+    border: 3px solid rgb(78, 47, 255) 
+}
+/* form Container */
+form .con {
+    margin: 0 auto;
+}
+
+/*header*/
+header {
+    margin: 2% auto 10% auto;
+    text-align: center;
+}
+
+header h2 {
+    font-size: 250%;
+    font-family:monospace, cursive;
+    color: #3e403f;
+}
+
+header h3 {letter-spacing: 0.05em;}
+
+
+.atributos {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+    background: #fff;
+    color: #333;
+    
+    padding: 2%;
+    border-radius: 5px 0px 0px 5px;
+    width: 160px;
+   
+    font-weight: bold;
+   border: 2px solid rgb(87, 245, 13);
+}
+.atributos input {
+
+    width: 100px;
+    margin-left: 10px;
+}
+.atributos label {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.hijo1{
+    padding: 5px;
+    width: 300px;
+}
+.hijo2{
+    
+    margin-left: 60px;
+    border: 1px solid rgb(253, 50, 128);
+    padding: 10px;
+    background-color: white;
+    width: 300px
+}
+textarea{
+    width:200px;
+    border:1px solid #ccc;
+    background: #fff;
+    border-radius:4px;
+    height:300px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+  }
+
+/* buttons  */
+.other{
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    display: inline-block;
+    color: #252537;
+  
+    width: 80px;
+    height: 30px;
+  
+    padding: 0 3px;
+    background: #fff;
+    border-radius: 5px;
+    
+    outline: none;
+    border: none;
+  
+    cursor: pointer;
+    text-align: center;
+    font-size: 11px;
+    transition: all 0.2s linear;
+    
+    margin: 7% auto;
+    letter-spacing: 0.05em;
+    background: #B8F2E6;
+
+}
+/* Submits */
+.submits {
+    width: 65%;
+    display: inline-block;
+    margin-left: 2%;
+}
+
+/* buttons hover */
+button:hover {
+    transform: translatey(3px);
+    box-shadow: none;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+     background-color: rgb(247, 171, 72);
+     margin-top: 20%;
+     width: 100%;
+     height: 25px;
+     align-content: center;
+     align-items: center;
+     border-style: solid;
+     border-bottom: darkred;
+     justify-content: space-between;
+    
+    }
+    
+    #foot, #foot1{
+        
+        color: white;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: bold;
+        text-shadow: 10px 3px 7px #000000;
+    
+    }

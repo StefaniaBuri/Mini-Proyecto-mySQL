@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="adicional.css">
+    <script type="text/javascript" src="app-adicional.js"></script>
+    <title>Adicional</title>
+</head>
+
+<body>
+
+    <main id="main">
+        <header><img src="./img/codenotch.jpg" alt="" srcset="">
+            <nav id="nav"> <li> <a href="./app-alumnos.html" id="nav1">ALUMNOS</a>  </li>
+            <li> <a href="./app-notas.html"id="nav2"> NOTAS </a></li>
+            <li> <a href="./app-adicional.html" id="nav3"> ADICIONAL </a> </li></nav>
+            </header>
+        
+        <form action=""onsubmit="return false" id="form">
+            <input type="text" placeholder="ID ALUMNO" id="idAlumno">
+            <input type="text" placeholder="ID PROFESOR" id="idProfe">
+                
+            <button onclick="getAVG()">NOTA MEDIA</button>
+            <button onclick="getApuntadas()">APUNTADAS</button>
+            <button onclick="getImpartidas()">IMPARTIDAS</button>
+        
+        </form>
+        <section id="info">
+            <h3>INSTRUCCIONES</h3>
+            <li>Introduce el ID del alumno para mostrar la nota media de sus asignaturas.</li>
+            <li>Introduce el ID del alumno para mostrar las asignaturas en las que esta apuntado.</li>
+            <li>Introduce el ID del profesor para mostrar las asignaturas que imparte.</li>
+            
+        </section>
+        <section id="section">
+        <p id="showname"></p>
+        <p id="showlastn"></p>
+        <p id="showgr"></p>
+        <p id="showye"></p>
+    </section>
+            
+           
+    <footer id="footer"><p id="foot">BASE DE DATOS CODENOTCH- <a href="" id="foot1">STEFANIA BURI</a>- 2021</p></footer>
+</main>
+</body>
+</html>

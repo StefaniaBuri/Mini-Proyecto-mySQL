@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app-styles.css">
+    <script type="text/javascript" src="app-alumnos.js"></script>
+    <title>Alumnos</title>
+</head>
+
+<body>
+    
+    <div class="overlay">
+
+        <form>
+          
+            <div class="con">
+           
+                <header class="head-form">
+                    <h2>API ALUMNOS</h2>
+                    
+                </header>
+           
+                <div class="atributos">
+
+                    <div class="hijo1">
+                        <h3>Datos Alumno:</h3>
+                        <hr>
+                        
+                        <label for="id">Id:</label>     
+                        <input id="id" required></br>
+                        
+                        <label for="nombre">Nombre:</label>     
+                        <input id="nombre" required ></br>
+                        
+                        <label for="apellido1">Apellido1:</label> 
+                        <input id="apellido1" required></br>
+                        
+                        <label for="apellido2">Apellido2:</label>     
+                        <input id="apellido2" required></br>
+                        
+                        <label for="edad">Edad:</label> 
+                        <input id="edad" required></br>
+                        
+                        <label for="grupo">Id_Grupo:</label>     
+                        <input id="grupo" required></br>
+                        
+                        <label for="ingreso">Año Ingreso:</label> 
+                        <input id="ingreso" required></br>
+                        <br>
+                        <!--        botones -->
+            
+                        <div class="other">
+                        
+                            <button type="button" class="btn submits" onclick="postAlumno()">CREAR</button>
+
+                            <button type="button" class="btn submits" onclick="putAlumno()">ACTUALIZAR</button>
+
+                        </div>
+                    </div>
+
+                    <div class="hijo2">
+                    
+                        <h4>ALUMNO</h3>
+                        <hr>
+                        <table class="tabla">
+                           
+                            <label for="mostrarId">Id:</label>     
+                            <input id="mostrarId" required></br>
+                        
+                        <br>
+                        <!--        botones -->
+            
+                        <div class="other">
+                            
+                            <button type="button" class="btn submits" onclick="getAlumno()"> MOSTRAR</button>
+                        
+                            <button type="button" class="btn submits" onclick="deleteAlumno()">ELIMINAR</button>
+                        </div>
+
+                            
+                            <div >
+                                <label for="alumnos">TOTAL ALUMNOS</label>
+                                <textarea id="alumnos"></textarea>
+                            </div>
+                    </table>
+                    </div>
+                   
+                </div>
+
+
+                <!--   fin Container  -->
+            </div>
+            
+            <!-- fin Form -->
+        </form>
+    </div>
+   
+    <footer id="footer"><p id="foot">BASE DE DATOS CODENOTCH- <a href="" id="foot1">STEFANIA BURI</a>- 2021</p></footer>
+</body>
+</html>
