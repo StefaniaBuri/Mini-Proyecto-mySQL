@@ -132,7 +132,7 @@ app.get('/notas', (request, response) => {
        sql = "SELECT * FROM notas";
    }
    else{
-    sql = "SELECT * FROM notas WHERE id_notas=" + request.query.id;
+    sql = "SELECT * FROM notas WHERE id_alumnos=" + request.query.id;
    
     }
 
@@ -178,7 +178,7 @@ app.put('/notas', (request, response) => {
     let sql = "UPDATE notas SET id_alumnos = COALESCE(?, notas. id_alumnos)," + "id_asignaturas = COALESCE(?, notas.id_asignaturas)," + "fecha_examen = COALESCE(?, notas.fecha_examen)," + 
     "calificacion = COALESCE(?, notas.calificacion) WHERE id_notas = ?";
     
-    let params =  [request.body.id_notas, request.body.id_alumnos, request.body.id_asignaturas, request.body.fecha_examen, request.body.calificacion];
+    let params =  [ request.body.id_alumnos, request.body.id_asignaturas, request.body.fecha_examen, request.body.calificacion, request.body.id_notas];
 
     console.log('LA NOTA HA SIDO MODIFICADA' + sql);
 

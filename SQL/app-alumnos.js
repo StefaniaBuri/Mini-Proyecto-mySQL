@@ -37,13 +37,8 @@ function getAlumno(){
             console.log(result);
             for(let i= 0; i< result.length; i++){
                 document.getElementById("alumnos").innerHTML 
-                += `Nombre: ${result[i].nombre}, 
-                    Apellidos: ${result[i].apellido1} ${result[i].apellido2}, 
-                    Edad: ${result[i].edad}, 
-                    Id_grupo: ${result[i].id_grupo}, 
-                    Año Ingreso: ${result[i].año_ingreso}
-                    
-                    `;
+                += `Nombre: ${result[i].nombre}, Apellidos: ${result[i].apellido1} ${result[i].apellido2}, Edad: ${result[i].edad}, \nId_grupo: ${result[i].id_grupo}, \nAño Ingreso: ${result[i].año_ingreso}
+                \n`;
             }
             
         }else{

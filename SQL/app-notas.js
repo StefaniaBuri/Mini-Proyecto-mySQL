@@ -14,14 +14,11 @@ class Notas{
 //-------- FETCH PETICIONES----------
 //------  GET----------
 function getNota(){
-    let id = document.getElementById("idNota").value;
+
     let id1 = document.getElementById("idalumno").value;
     
     let url = "http://localhost:3000/notas";
 
-    if(id != ""){
-        url = "http://localhost:3000/notas?id=" + id;
-    }
     if(id1 != ""){
         url = "http://localhost:3000/notas?id=" + id1;
     }
@@ -39,14 +36,8 @@ function getNota(){
             console.log(result);
             for(let i= 0; i< result.length; i++){
                 document.getElementById("alumnos").innerHTML 
-                += ` 
-                    Id Notas:  ${result[i].id_notas},
-                    Id Alumno:  ${result[i].id_alumnos},
-                    Asignatura: ${result[i].id_asignaturas}, 
-                    Fecha Examen: ${result[i].fecha_examen}, 
-                    Calificación: ${result[i].calificacion},
-
-                    `;
+                += `Id Notas:  ${result[i].id_notas},\nId Alumno:  ${result[i].id_alumnos}, \nAsignatura: ${result[i].id_asignaturas}, \nFecha Examen: ${result[i].fecha_examen}, \nCalificación: ${result[i].calificacion}, 
+                \n`;
             }
     })
 
